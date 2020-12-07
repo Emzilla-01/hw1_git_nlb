@@ -1,0 +1,8 @@
+# Illustration: Ignore files called .jobs
+.jobs
+# Illustration: Ignore the teacher
+SAMR
+# Serious: Ignore vi backup files
+*.swp
+# Serious: Deal with confused Mac users
+.DS_Store
