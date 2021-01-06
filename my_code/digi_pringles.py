@@ -59,20 +59,25 @@ class Samsung(IntermediatePhone):
     def notePen(self):
         print("Samsung Note has a pen and Apple doesn't!")
 
-# =============================================================================
-my_phone = Phone('blk')
-my_phone.color, my_phone.status
-my_phone.call('Emy')
-my_phone.sendMsg('Emy', "Hello!")
-# =============================================================================
-my_iphone = iPhone("rose gold")
-my_iphone.status = 'broken screeeen'
-my_iphone.fix()
-my_iphone.brand
-# =============================================================================
-my_samsung= Samsung("silver")
-my_samsung.status="broken headphone port"
-my_samsung.fix()
-my_samsung.brand
-my_samsung.call("my_iphone")
-my_samsung.notePen()
+def main():
+    # =============================================================================
+    my_phone = Phone('blk')
+    my_phone.color, my_phone.status
+    my_phone.call('Emy')
+    my_phone.sendMsg('Emy', "Hello!")
+    # =============================================================================
+    my_iphone = iPhone("rose gold")
+    my_iphone.status = 'broken screeeen'
+    my_iphone.fix()
+    my_iphone.brand
+    # =============================================================================
+    my_samsung= Samsung("silver")
+    my_samsung.status="broken headphone port"
+    my_samsung.fix()
+    my_samsung.brand
+    my_samsung.call("my_iphone")
+    my_samsung.notePen()    
+
+
+if __name__ == '__main__':
+    main()

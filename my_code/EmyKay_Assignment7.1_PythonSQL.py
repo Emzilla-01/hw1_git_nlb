@@ -202,8 +202,8 @@ class LibraryTerminal():
                     self.get_avail_copies()
             except ValueError as e:
                 print("invalid input")
-            finally:
-                self.db.close()
+            # finally:
+            #     self.db.close()
 
 if __name__ == "__main__":
     # execute_sql_statement_commit_external(library_init_script_sql) # Not working inside python.. don't know why

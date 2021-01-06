@@ -4,14 +4,14 @@
 #Emy Kay
 use multiplex_db;
 select * from users;
-select userId, userName, userType, sum(seatFare*noOfSeats) as money_spend, coalesce(mobileNo, '-') as mobileNo, coalesce(emailId, '-') as emailId
+select usersFullBookingDetail.userId, userName, userType, coalesce(sum(seatFare*noOfSeats), 0) as money_spend, coalesce(mobileNo, '-') as mobileNo, coalesce(emailId, '-') as emailId
 	from users
-	natural join 
+	left outer join 
         (select * from booking natural join 
             (select * from bookingDetail natural join seatType) 
                 as fullBookingDetail) 
                 as usersFullBookingDetail
 	where usersFullBookingDetail.userId = users.userId
-    group by users.userId
+    group by emailId
     order by money_spend desc
     ;

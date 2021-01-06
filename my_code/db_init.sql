@@ -111,7 +111,9 @@ insert into Users (UserId, UserName, UserType, MobileNo, EmailId)
 	values  (Null, "Rick Deckard", "c", "1-982-2523", "rdeckard@lapd.gov"),
 			(Null, "Roy Batty", "c", "1-982-2523", Null),
 			(Null, "Agent Smith", "a", "1-243-6877", "smith@agents.net"),
-            (Null, "Obi Wan Kenobi", "c", "8-286-6646", "smith@agents.net");
+            (Null, "Obi Wan Kenobi", "c", "8-286-6646", "smith@agents.net"),
+            (Null, "Obi Wan Kenobi", "c", "8-286-6646", "oldben@tatmail.net")
+            ;
 
 insert into Hall (HallID, HallDesc, TotalCapacity)
 	values  (1, "Snake Pit", 200),
