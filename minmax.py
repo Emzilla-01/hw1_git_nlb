@@ -45,3 +45,4 @@ if __name__ == '__main__':
 
     print("\nColdest day: {}\nTemp: {}c\n".format(str(MIN[2])[:11], MIN[1]))
     print("\nWarmest day: {}\nTemp: {}c\n".format(str(MAX[2])[:11], MAX[1]))
+
